@@ -1,0 +1,55 @@
+:root {
+    --light-gray: #f6f6f6;
+    --light-brown: rgb(209, 205, 201);
+    --med-gray: #535353;
+    --dark-gray: #252525;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+/* Controls scroll when project image is expanded */
+body.locked {
+    overflow: hidden;
+}
+
+/* General Styling */
+/* Controls each page */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 60px;
+    margin: 1rem 0rem;
+}
+p, li {
+    font-size: 20px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+    height: 80px;
+}
+img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+}
+.bright-text {
+    color: var(--light-gray);
+}
+.dark-text {
+    color: var(--dark-gray);
+}

@@ -1,0 +1,107 @@
+#projects {
+    background-color: var(--light-gray);
+    height: auto;
+}
+#project_pic {
+    position: relative;
+    width: 22vw;
+    height: auto;
+    border-radius: 0.3rem;
+    margin: 1.5rem 30px;
+}
+/* Projects container */
+.project-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: auto;
+    width: 90vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+}
+.project-wrap h1 {
+    padding: 40px;
+}
+.project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 83vw;
+    height: auto;
+    background-color: var(--light-gray);
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--med-gray);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+}
+.project a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: bold;
+    border-left: 2px solid var(--dark-gray);
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* X, Y, Blur, Spread, Color */
+}
+.project a:hover {
+    background-color: var(--light-brown);
+}
+.inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    padding: 1.5rem 30px;
+}
+.bullet-points {
+    margin: 0rem 0 1rem 1rem;
+}
+.source {
+    padding: 1rem 0rem 0.5rem 0rem;
+    margin-top: auto;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.thumbnail {
+    cursor: pointer;
+}
+/* Icon styling */
+.expand-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+/* Show icon when hovering over the image */
+.image-container:hover .expand-icon {
+    opacity: 1;
+}
+/* Fullscreen modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}

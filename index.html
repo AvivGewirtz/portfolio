@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aviv Gewirtz</title>
+        <link rel="stylesheet" href="css\styles.css">
+        <link rel="stylesheet" href="css\navbar.css">
+        <link rel="stylesheet" href="css\main_page.css">
+        <link rel="stylesheet" href="css\about.css">
+        <link rel="stylesheet" href="css\projects.css">
+        <link rel="stylesheet" href="css\contact.css">
+        <link rel="stylesheet" href="css\media.css">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <button class="menu-toggle">☰</button> <!-- Hamburger Icon -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home">
+            <div class="main dark-text">
+                <h1>Aviv Gewirtz</h1>
+                <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
+                <p>Welcome to my portfolio! I specialize in creating
+                    efficient
+                    and scalable solutions.</p>
+                <div>
+                    <a href="#contact" class="button">Reach Out</a>
+                </div>        
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about dark-text">
+                <!-- Top Section: About Me -->
+                <div class="top">
+                    <div class="inner-text">
+                        <h1>About Me</h1>
+                        <p>
+                            Hi, I'm Aviv, a Computer Science student
+                            at The Open University of Israel and a dedicated
+                            software engineer. I'm all about learning complex things, solving tricky problems and pushing
+                            technological boundaries.
+                            Whether it’s designing software architecture, managing projects, or writing
+                            code, I love bringing ideas to life.
+                            <br></br>
+                            I excel in collaborative environments where
+                            creativity meets technical precision. My expertise
+                            includes software development, system design, and
+                            technical documentation. Beyond coding, I enjoy
+                            working out, playing guitar, gaming, and assembling
+                            custom PCs.
+                        </p>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics\profile\0fef074a-fed5-4724-873a-6acfaf75f2b4 - Copy_enhanced.png" alt="Profile Picture"
+                            id="about_pic">
+                    </div>
+                </div>
+
+                <!-- Experience & Education & Skills -->
+                <div class="mid">
+                    <h1>Experience</h1>
+                    <h2><strong>2025 - Present</strong></h2>
+                    <div class="education">
+                        <p><strong>Full-Stack Developer at MAX Impact (volunteer)</strong></p>
+                        <ul class="bullet-points">
+                            <li>Developed features for the SyncEat app using Bubble.</li>
+                            <li>Collaborated with a team of engineers, utilizing Jira for project management.</li>
+                        </ul>
+                    </div>
+                    <h2><strong>2018 - Present</strong></h2>
+                    <div class="education">
+                        <p><strong>PC Builder (Self-employed)</strong></p>
+                        <ul class="bullet-points">
+                            <li>Design and assembly of custom PCs for various clients.</li>
+                        </ul>
+                    </div>
+                    <h1>Education & Skills</h1>
+                    <h2><strong>2023 - 2026</strong></h2>
+                    <div class="education">
+                        <p><strong>B.Sc. in Computer Science - The Open University of Israel</strong></p>
+                        <p>Current average: 84</p>
+                        <p>Relevant Coursework: Algorithms (93), Intro to Data Structures and Algorithms (85), Intro to Computer Science and Java (91),</p>
+                        <p>System Programming Laboratory (95).</p>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <img src="icons\boostrap.svg" alt="bootstrap icon"
+                        class="icon">
+                    <img src="icons\css.svg" alt="css icon" class="icon">
+                    <img src="icons\html.svg" alt="html icon" class="icon">
+                    <img src="icons\javascript.svg" alt="javascript icon"
+                        class="icon">
+                    <img src="icons\nodejs.svg" alt="nodejs icon" class="icon">
+                    <img src="icons\react.svg" alt="react icon" class="icon">
+                    <img src="icons\c.svg" alt="c icon" class="icon">
+                    <img src="icons\java.svg" alt="java icon" class="icon">
+                    <img src="icons\mongodb.svg" alt="mongodb icon"
+                        class="icon">
+                    <img src="icons\postgresql.svg" alt="postgresql icon"
+                        class="icon">
+                    <img src="icons\vscode.svg" alt="vscode icon" class="icon">
+                    <img src="icons\intellij.svg" alt="intellij icon"
+                        class="icon">
+                    <img src="icons\github.svg" alt="github icon" class="icon">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="project-wrap dark-text">
+                <div>
+                    <h1>My Projects</h1>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="pics\projects\IS.jpg" alt="Thumbnail" class="thumbnail"
+                            id="project_pic" onclick="openImage(this)">
+                        <div class="expand-icon">
+                            <i class="fa fa-search-plus"></i>
+                            <!-- Font Awesome magnifying glass icon -->
+                        </div>
+                    </div>
+                    <div id="imageModal" class="modal" onclick="closeImage()">
+                        <img id="fullImage" class="modal-content">
+                    </div>
+                    <div class="inner">
+                        <h3>Air Defense System Simulation</h3>
+                        <div>
+                            <p>
+                                A Java GUI application simulating an air
+                                defense system, built with Java in IntelliJ.
+                            </p>
+                            <ul class="bullet-points">
+                                <li>2D simulation running at 60 FPS</li>
+                                <li>User-friendly GUI with clear
+                                    settings</li>
+                                <li>Precise calculations showcasing the
+                                    importance of key aspects and components
+                                    in air defense systems</li>
+                            </ul>
+                            <p>
+                                This project was inspired by my curiosity
+                                about how the "Iron Dome" air defense system
+                                works.
+                                It led me to explore the mathematical
+                                equations behind interception, deepening my
+                                understanding of both physics and game
+                                development.
+                            </p>
+                        </div>
+                        <div class="source">
+                            <a
+                                href="https://github.com/AvivGewirtz/Interception-Simulation"
+                                target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="pics\projects\PM.jpg" alt="Thumbnail" class="thumbnail"
+                            id="project_pic" onclick="openImage(this)">
+                        <div class="expand-icon">
+                            <i class="fa fa-search-plus"></i>
+                            <!-- Font Awesome magnifying glass icon -->
+                        </div>
+                    </div>
+                    <div id="imageModal" class="modal" onclick="closeImage()">
+                        <img id="fullImage" class="modal-content">
+                    </div>
+
+                    <div class="inner">
+                        <h3>Park Maps</h3>
+                        <div>
+                            <p>
+                                A responsive full-stack web application that
+                                allows users to explore, add, and discuss
+                                dog parks.
+                            </p>
+                            <ul class="bullet-points">
+                                <li>Full CRUD functionality</li>
+                                <li>Integrated a custom map using the
+                                    MapTiles API</li>
+                                <li>Intuitive and user-friendly
+                                    front-end</li>
+                            </ul>
+                            <p>
+                                This project was inspired by the final
+                                project in Colt Steele’s <em>The Web
+                                    Developer Bootcamp 2024</em> on Udemy.
+                                It enhanced my full-stack development
+                                skills, Developed with Bootstrap,
+                                Express.js, and MongoDB.
+                            </p>
+                            <p style="color:red">Note: Work in Progress</p>
+                        </div>
+                        <div class="source">
+                            <a href="https://github.com/AvivGewirtz/Park-Maps"
+                                target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="pics\projects\AS.png" alt="Thumbnail" class="thumbnail"
+                            id="project_pic" onclick="openImage(this)">
+                        <div class="expand-icon">
+                            <i class="fa fa-search-plus"></i>
+                            <!-- Font Awesome magnifying glass icon -->
+                        </div>
+                    </div>
+                    <div id="imageModal" class="modal" onclick="closeImage()">
+                        <img id="fullImage" class="modal-content">
+                    </div>
+                    <div class="inner">
+                        <h3>Assembler</h3>
+                        <div>
+                            <p>
+                                An assembler for a selective set of assembly
+                                commands, written in ANSI C using Visual
+                                Studio and tested in an Ubuntu environment.
+                            </p>
+                            <ul class="bullet-points">
+                                <li>Accurate translation from Assembly to
+                                    Base64 code</li>
+                                <li>Highly reliable performance</li>
+                            </ul>
+                            <p>
+                                This project was the final assignment for
+                                the <strong>System Development Lab</strong>
+                                course.
+                                Written in C using Visual Studio and tested
+                                on Ubuntu, it deepened my understanding of
+                                low-level programming and what it takes
+                                to write efficient C programs.<br>
+                                <strong>Final grade: 95</strong>
+                            </p>
+                        </div>
+                        <div class="source">
+                            <a href="https://github.com/AvivGewirtz/Assembler"
+                                target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-container">
+                        <img src="pics\projects\GC.jpg" alt="Thumbnail" class="thumbnail"
+                            id="project_pic" onclick="openImage(this)">
+                        <div class="expand-icon">
+                            <i class="fa fa-search-plus"></i>
+                            <!-- Font Awesome magnifying glass icon -->
+                        </div>
+                    </div>
+                    <div id="imageModal" class="modal" onclick="closeImage()">
+                        <img id="fullImage" class="modal-content">
+                    </div>
+                    <div class="inner">
+                        <h3>Grade Calculator</h3>
+                        <div>
+                            <div>
+                                <p>
+                                    A web application designed specifically
+                                    for Open University (OPENU) students.
+                                    It allows users to input their course
+                                    grades and accurately calculates their
+                                    final course results.
+                                </p>
+                                <ul class="bullet-points">
+                                    <li>Accurate grade calculation</li>
+                                    <li>Intuitive UI with Light & Dark
+                                        mode</li>
+                                </ul>
+                                <p>
+                                    Built with HTML, CSS, and JavaScript,
+                                    the application has been tested by
+                                    multiple OPENU students to ensure
+                                    reliability and ease of use.
+                                </p>
+                            </div>
+                            <div class="source">
+                                <a
+                                    href="https://github.com/AvivGewirtz/grade_calculator.github.io"
+                                    target="_blank">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="dark-text">
+            <div class="read">
+                <header>
+                    <h1>Connect with Me</h1>
+                </header>
+                <p>You can reach out to me via email or connect with me on social media:</p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/avivgewirtz"
+                        target="_blank" rel="noopener noreferrer">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://github.com/AvivGewirtz" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>GitHub</p>
+                    </a>
+                    <a href="mailto:aviv.gewirtz@gmail.com"><p>Email</p></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p style="color:white">© 2025 All rights reserved | Aviv Gewirtz</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

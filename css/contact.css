@@ -1,0 +1,20 @@
+#contact {
+    height: auto;
+    background-color: var(--light-gray);
+}
+.read {
+    padding: 20px 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+}
+.links a{
+    margin: 5px;
+    text-decoration: none;
+}

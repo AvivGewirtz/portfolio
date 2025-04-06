@@ -1,0 +1,63 @@
+#about {
+    background-color: var(--light-gray);
+}
+#about_pic {
+    width: 15vw;
+    height: auto;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    min-height: 80vh;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+}
+/* About me part of in the about page */
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+.inner-text{
+    text-align: left;
+    margin-right: 1rem;
+    flex: 1;
+}
+/* Education part of in the about page */
+.mid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 50px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.education {
+    margin-left: 2rem;
+}
+/* Skills icons */
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.icon {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    transition: transform  0.1s ease-in-out;
+    box-shadow: none;
+}
+.icon:hover {
+    transform: scale(1.1);
+}

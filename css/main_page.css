@@ -1,0 +1,46 @@
+#home {
+    background-image: url('../pics/background/pexels-pixabay-270549.jpg');
+    background-size: cover; /* Ensures the image covers the element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-blend-mode: multiply; /* Blends the background image with the color */
+    height: 100vh;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 50px 80px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurs background behind this element */
+}
+.main h1 {
+    font-size: 80px;
+}
+.main p {
+    font-size: 25px;
+}
+/* Text area in the main page */
+.main :last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Main button */
+.button {
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 10px 50px;
+    background-color: #3F72AF;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.05s ease-in-out;
+}
+.button:hover{
+    background-color: var(--dark-gray);
+}
